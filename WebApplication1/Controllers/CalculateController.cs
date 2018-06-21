@@ -14,8 +14,9 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+
         [HttpPost]
-        public ActionResult total(double x, double y, string calc)
+        public ActionResult Total(double x, double y, string calc)
         {
             double total = 0;
             switch(calc)
@@ -39,7 +40,7 @@ namespace WebApplication1.Controllers
                 default:
                     break;
             }
-            return Content("Результат: " + total);
+            return Content((DateTime.Now.ToString("dd MMMM yyyy | HH:mm:ss")) + "\tX=" + x + "\tY=" + y + "\t" + calc + "\tРезультат: " + total);
         }
     }
 }

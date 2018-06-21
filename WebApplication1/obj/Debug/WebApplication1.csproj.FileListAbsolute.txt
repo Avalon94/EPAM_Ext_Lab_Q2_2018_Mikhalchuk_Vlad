@@ -91,8 +91,8 @@ C:\Users\User\source\repos\WebApplication1\WebApplication1\bin\ru\System.Web.Raz
 C:\Users\User\source\repos\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.resources.dll
 C:\Users\User\source\repos\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Deployment.resources.dll
 C:\Users\User\source\repos\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Razor.resources.dll
-C:\Users\User\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\User\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\User\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\User\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\User\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
