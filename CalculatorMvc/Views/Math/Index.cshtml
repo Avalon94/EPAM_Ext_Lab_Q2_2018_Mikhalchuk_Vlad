@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Calculator";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Calculator</h2>
+            <form id="calculatorForm" method="post">
+                <div class="row">
+                    <div class="form-group">
+                        X
+                        <input type="text" name="firstNumber" value="@ViewBag.firstNumber" />
+                    </div>
+                    <div class="form-group">
+                        Y
+                        <input type="text" name="secondNumber" value="@ViewBag.secondNumber" />
+                        <br>
+                        <input type="radio" name="calc" value="@ViewBag.Add" />
+                        Сложение
+                        <br />
+                        <input type="radio" name="calc" value="@ViewBag.Min" />
+                        Вычитание
+                        <br />
+                        <input type="radio" name="calc" value="@ViewBag.Mul" />
+                        Умножение
+                        <br />
+                        <input type="radio" name="calc" value="@ViewBag.Div" />
+                        Деление
+                        <br />
+                    </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Calculate" />
+                        </div>
+                    </div>
+
+                <div class="row">
+                    @(DateTime.Now.ToString("dd MMMM yyyy | HH:mm:ss"))  X=@ViewBag.firstNumber  Y=@ViewBag.secondNumber  @ViewBag.calc  Result: <span>@ViewBag.Result</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
