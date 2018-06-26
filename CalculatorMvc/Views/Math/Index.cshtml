@@ -1,4 +1,5 @@
-﻿@{
+﻿@using CalculatorMvc.Logs
+@{
     ViewBag.Title = "Calculator";
 }
 
@@ -30,13 +31,18 @@
                         <br />
                     </div>
 
-                        <div class="form-group">
-                            <input type="submit" value="Calculate" />
-                        </div>
+                    <div class="form-group">
+                        <input type="submit" value="Calculate" />
                     </div>
+                </div>
 
                 <div class="table">
-                    @(DateTime.Now.ToString("dd MMMM yyyy | HH:mm:ss"))  @ViewBag.firstNumber @ViewBag.calc @ViewBag.secondNumber  Result: @ViewBag.result
+                    @*@(DateTime.Now.ToString("dd MMMM yyyy | HH:mm:ss"))  @ViewBag.firstNumber @ViewBag.calc @ViewBag.secondNumber  Result: @ViewBag.result*@
+                    <textarea readonly="readonly" rows="5" cols="50">
+                        @foreach (var log in Html.GetLog())
+                        {
+                            @log
+                        }</textarea>
                 </div>
             </form>
         </div>
