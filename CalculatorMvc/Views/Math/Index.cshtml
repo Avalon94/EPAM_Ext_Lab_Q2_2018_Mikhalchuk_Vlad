@@ -16,16 +16,16 @@
                         Y
                         <input type="text" name="secondNumber" value="@ViewBag.secondNumber" />
                         <br>
-                        <input type="radio" name="calc" value="@ViewBag.Add" />
+                        <input type="radio" name="calc" value="+" />
                         Сложение
                         <br />
-                        <input type="radio" name="calc" value="@ViewBag.Min" />
+                        <input type="radio" name="calc" value="-" />
                         Вычитание
                         <br />
-                        <input type="radio" name="calc" value="@ViewBag.Mul" />
+                        <input type="radio" name="calc" value="*" />
                         Умножение
                         <br />
-                        <input type="radio" name="calc" value="@ViewBag.Div" />
+                        <input type="radio" name="calc" value="/" />
                         Деление
                         <br />
                     </div>
@@ -35,8 +35,8 @@
                         </div>
                     </div>
 
-                <div class="row">
-                    @(DateTime.Now.ToString("dd MMMM yyyy | HH:mm:ss"))  X=@ViewBag.firstNumber  Y=@ViewBag.secondNumber  @ViewBag.calc  Result: <span>@ViewBag.Result</span>
+                <div class="table">
+                    @(DateTime.Now.ToString("dd MMMM yyyy | HH:mm:ss"))  @ViewBag.firstNumber @ViewBag.calc @ViewBag.secondNumber  Result: @ViewBag.result
                 </div>
             </form>
         </div>

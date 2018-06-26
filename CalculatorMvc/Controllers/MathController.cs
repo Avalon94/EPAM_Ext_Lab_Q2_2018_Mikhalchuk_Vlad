@@ -6,26 +6,30 @@
 
     public class MathController : Controller
     {
-        public ActionResult Index(double? firstNumber, double? secondNumber, string calc)
+        public ActionResult Index(double? firstNumber, double? secondNumber, string calc, double? result)
         {
             if (firstNumber.HasValue && secondNumber.HasValue)
             {
-                double result = 0;
+                result = 0;
+                if (calc == "+")
+                {
+                    result = firstNumber.Value + secondNumber.Value;
+                }
                 switch (calc)
                 {
-                    case "Add":
+                    case "+":
                         result = firstNumber.Value + secondNumber.Value;
                         break;
 
-                    case "Min":
+                    case "-":
                         result = firstNumber.Value - secondNumber.Value;
                         break;
 
-                    case "Mul":
+                    case "*":
                         result = firstNumber.Value * secondNumber.Value;
                         break;
 
-                    case "Div":
+                    case "/":
                         result = firstNumber.Value / secondNumber.Value;
                         break;
 
@@ -35,12 +39,13 @@
 
                 this.ViewBag.firstNumber = firstNumber.ToString();
                 this.ViewBag.secondNumber = secondNumber.ToString();
-                this.ViewBag.Result = result.ToString();
+                this.ViewBag.calc = calc.ToString();
+                this.ViewBag.result = result.ToString();
 
                 return this.View();
             }
 
-           // this.ViewBag.Result = this.ViewBag.firstNumber = this.ViewBag.secondNumber = 0;
+            this.ViewBag.result = this.ViewBag.firstNumber = this.ViewBag.secondNumber = 0;
             return this.View();
         }
     }
