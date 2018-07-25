@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\obj\Debug\Task6.2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\bin\Debug\Task6.2.exe.config
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\bin\Debug\Task6.2.exe
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\bin\Debug\Task6.2.pdb
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\bin\Debug\StyleCop.dll
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\bin\Debug\StyleCop.xml
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\obj\Debug\Task6.2.csproj.CopyComplete
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\obj\Debug\Task6.2.exe
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\obj\Debug\Task6.2.pdb
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\obj\Debug\Task6.2.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Task6\Task6.2\Task6.2\obj\Debug\Task6._2.Properties.Resource.resources
