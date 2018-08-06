@@ -19,14 +19,14 @@ namespace Task6._1
             bool programWorks = true;
             while (programWorks)
             {
-                Console.WriteLine("1: to sort the words we have set");
+                Console.WriteLine("1: to sort the words we have set");//todo pn строки - в ресурсы
                 Console.WriteLine("2: to sort the words you will enter");
                 Console.WriteLine("3: Exit\n");
 
                 switch (Console.ReadLine())
                 {
-                    case "1":
-                        SortingOfFixedWords();
+                    case "1"://todo pn хардкод
+						SortingOfFixedWords();
                         break;
                     case "2":
                         SortingOfInputWords();
